@@ -1,4 +1,4 @@
-package S10.exercicios.ex3;
+package S10.exercicios.vetores.ex3;
 
 import java.util.Locale;
 import java.util.Scanner;

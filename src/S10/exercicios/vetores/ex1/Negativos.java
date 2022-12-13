@@ -1,4 +1,4 @@
-package S10.exercicios.ex1;
+package S10.exercicios.vetores.ex1;
 
 /*Problema "negativos":
 Faça um programa que leia um número inteiro positivo N (máximo = 10) e depois N números inteiros

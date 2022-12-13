@@ -1,4 +1,4 @@
-package S10.exercicios.ex2;
+package S10.exercicios.vetores.ex2;
 
 /*
 Problema "alturas":

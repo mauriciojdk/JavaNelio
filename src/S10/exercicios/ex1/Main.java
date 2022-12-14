@@ -15,19 +15,25 @@ public class Main {
         System.out.print("Quantos empregados vai registrar? ");
         int r = sc.nextInt();
 
-        for (int i=0; i < r; i++ ){
-            System.out.println("Empregado #" + (i+1));
+        for (int i=0; i < r; i++ ) {
+            System.out.println("Empregado #" + (i + 1));
             System.out.print("Id: ");
             int id = sc.nextInt();
             sc.nextLine();
-            System.out.print("Nome: ");
-            String nome = sc.nextLine();
-            System.out.print("Salario: ");
-            Double salario = sc.nextDouble();
+            List<Empregado> result = emp.stream().filter(x -> x.getId() == id).collect(Collectors.toList());
+            if (result.isEmpty() == false) {
+                System.out.println("Id já utilizado, tente digitar outro!");
+                i += -1;
+            } else {
+                System.out.print("Nome: ");
+                String nome = sc.nextLine();
+                System.out.print("Salario: ");
+                Double salario = sc.nextDouble();
 
-            System.out.println(" ");
+                System.out.println(" ");
 
-            emp.add(new Empregado(id, nome, salario));
+                emp.add(new Empregado(id, nome, salario));
+            }
         }
 
         System.out.print("Qual Id do empregado que receberá aumento de salario? ");
@@ -39,7 +45,7 @@ public class Main {
                 System.out.print("Qual a porcetagem? ");
                 int f = sc.nextInt();
                 for (Empregado x : result) {
-                x.setSalario((x.getSalario() * f) / 100 + x.getSalario());
+                x.aumentoSalario(f);
             }
         }
 

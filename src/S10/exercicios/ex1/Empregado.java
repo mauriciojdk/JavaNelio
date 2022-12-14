@@ -31,7 +31,7 @@ public class Empregado {
         return salario;
     }
 
-    public void setSalario(Double salario) {
-        this.salario = salario;
+    public void aumentoSalario(Integer porcentagem) {
+        this.salario += (salario * porcentagem) / 100;
     }
 }

@@ -1,4 +1,4 @@
-package S10.exercicios.list.ex1;
+package S10.exercicios.list.ex1.entities;
 
 public class Empregado {
     private Integer id;

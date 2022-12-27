@@ -1,4 +1,4 @@
-package S10.exercicios.datas;
+package s11.datas;
 
 import java.time.Duration;
 import java.time.Instant;

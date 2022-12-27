@@ -1,5 +1,7 @@
 package S10.exercicios.list.ex1;
 
+import S10.exercicios.list.ex1.entities.Empregado;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
